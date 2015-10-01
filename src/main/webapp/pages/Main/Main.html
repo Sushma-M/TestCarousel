@@ -1,11 +1,17 @@
-<wm-page data-ng-controller="MainPageController" name="mainpage">
-    <wm-header content="header" name="header" height="auto"></wm-header>
-    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
-    <wm-content name="content">
-        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+<wm-page data-ng-controller="MainPageController" name="page1">
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-carousel height="480" name="carousel1">
+                <wm-carousel-content name="carousel_content1">
+                    <wm-prefab prefabname="youtube" name="youtube1" animation="bounceIn"></wm-prefab>
+                </wm-carousel-content>
+                <wm-carousel-content name="carousel_content2">
+                    <wm-picture width="100%" name="picture2" picturesource="http://farm4.static.flickr.com/3114/2524849923_1c191ef42e.jpg" height="100%" pictureaspect="Both" shape="circle"></wm-picture>
+                </wm-carousel-content>
+                <wm-carousel-content name="carousel_content3">
+                    <wm-picture name="picture4" height="100%" width="100%" picturesource="http://www.gettyimages.in/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg" animation="shake" on-mouseenter="picture4Mouseenter($event, $scope)"></wm-picture>
+                </wm-carousel-content>
+            </wm-carousel>
         </wm-page-content>
-        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
-    <wm-footer name="footer" content="footer"></wm-footer>
 </wm-page>
